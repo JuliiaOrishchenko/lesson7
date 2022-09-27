@@ -13,5 +13,5 @@ prices = {
 total_stock = {}
 for fruit, quantity in stock.items():
     if fruit in prices:
-        total_stock[fruit] = int(stock[fruit]*int(prices[fruit]))
+        total_stock[fruit] = stock[fruit]*prices[fruit]
 print(total_stock)
